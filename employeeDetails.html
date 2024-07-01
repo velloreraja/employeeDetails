@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organization Employee Data</title>
+    <link rel="stylesheet" href="employee.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h2>Employee Database Management</h2>
+
+        <button class="employeeadd">Add Employee</button>
+      </div>
+    </div>
+
+    <div class="employees">
+      <div class="employeesNames">
+        <span class="employeeNamesTitle">Employee List</span>
+        <div class="employeesNamesList"></div>
+      </div>
+
+      <div class="employeeName">
+        <span class="employeeNameTitle">Employee Information</span>
+        <div class="employeesInfo"></div>
+      </div>
+    </div>
+
+    <!-- add employee -->
+
+    <div class="addNewEmployee">
+      <form class="addEmpCreate">
+        Add a New Employee
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="FirstName*"
+            required
+          />
+          <input type="text" name="lastName" placeholder="LastName*" required />
+        </div>
+        <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+        <input type="email" name="email" placeholder="Email*" required />
+        <input type="number" name="salary" placeholder="Salary*" required />
+        <input type="address" name="address" placeholder="Address*" required />
+        <input
+          type="number"
+          name="contactNumber"
+          placeholder="MobileNumb*"
+          required
+        />
+        <input
+          class="addEmpDob"
+          type="date"
+          name="dob"
+          placeholder="date fo birth*"
+          required
+        />
+        <input
+          class="addEmpSubmit"
+          type="submit"
+          name="submit"
+          placeholder="Submit"
+        />
+      </form>
+    </div>
+
+    <script src="employeeDetails.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+  </body>
+</html>

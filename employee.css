@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.header > button {
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.header > button:hover {
+  background-color: rgb(53, 167, 53);
+}
+
+.employees {
+  display: flex;
+  margin: 1rem;
+}
+.employees > div {
+  border: 1px solid black;
+  padding: 10px;
+  height: 450px;
+}
+.employees .employeesNames {
+  width: 30%;
+}
+
+.employees .employeeName {
+  width: 60%;
+}
+.employeesInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.employeesNamesList,
+.employeesInfo {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 400px;
+  margin-top: 1rem;
+}
+.employeesNamesList,
+.employeesInfo {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.employeeNamesTitle,
+.employeeNameTitle {
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.employee_names--item {
+  cursor: pointer;
+  margin-bottom: 8px;
+  padding: 10px;
+  text-align: left;
+  background-color: lightblue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.empImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+/* .empSingleHead{
+
+} */
+
+.addNewEmployee {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(73, 72, 76, 0.15);
+}
+.addEmpCreate {
+  width: 400px;
+  background-color: white;
+  box-sizing: 0 0 50px gray;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.addEmpCreate div {
+  display: grid;
+  grid-template-columns: 48.1% 48.1%;
+  column-gap: 15px;
+}
+.addEmpCreate input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.addEmpCreate input::-webkit-outer-spin-button,
+.addEmpCreate input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.addEmpSubmit {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(189, 189, 189);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+.addEmpSubmit:hover {
+  background-color: rgb(67, 67, 67);
+  color: white;
+}
